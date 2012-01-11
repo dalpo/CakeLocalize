@@ -7,7 +7,7 @@ CakePHP simple database internazionalization
 
 ==== Add a git submodule
 
-  git submodule add git@github.com:dalpo/CakeLocalize.git app/Plugin/PieTime
+  git submodule add git@github.com:dalpo/CakeLocalize.git app/Plugin/CakeLocalize
   git submodule init && git submodule update
 
 ...
