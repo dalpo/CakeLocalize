@@ -10,9 +10,20 @@ CakePHP simple database internazionalization
   git submodule add git@github.com:dalpo/CakeLocalize.git app/Plugin/CakeLocalize
   git submodule init && git submodule update
 
-...
+== Usage:
+
+==== Specify which fields need to be internationalized in your model
+
+  class FooModel extends Model {
+  
+    public $actsAs = array(
+      'CakeLocalize.Field' => array("title", "description")
+    );
+  
+  }
 
 === Capistrano
+
 If you use submodules with capistrano you should put this conf under deploy.rb
 
   set :git_enable_submodules, 1
