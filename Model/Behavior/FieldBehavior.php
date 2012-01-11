@@ -33,7 +33,7 @@ class FieldBehavior extends ModelBehavior {
   }
 
   public function localizedField($field) {
-    return $field . "_" . $this->currentLocale();
+    return $this->_Model->alias . "." . $field . "_" . $this->currentLocale();
   }
 
   public function initI18nField($field = null) {
