@@ -1,14 +1,14 @@
 <?php
 
 class FieldBehavior extends ModelBehavior {
-  
+
   protected $_Model = null;
 
   protected $_defaultFieldOptions = array();
 
   protected $_options = array();
 
-  public function setup(Model &$Model, $fields = array()) {
+  public function setup(Model $Model, $fields = array()) {
     $this->_Model =& $Model;
 
     if(!is_array($fields)) {
